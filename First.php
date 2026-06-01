@@ -10,27 +10,19 @@
 
     <?php
 
-    // $firstNumber=9;
-    // $secondNumber=3;
-    // $result=$firstNumber+$secondNumber;
-    // $result=$firstNumber-$secondNumber;
-    // $result=$firstNumber*$secondNumber;
-    // $result=$firstNumber/$secondNumber;
-    // $result=$firstNumber**$secondNumber;
-    // $result=$firstNumber%$secondNumber;
+    // $firstNumber=10;
+    // echo++$firstNumber; //11
+    // echo--$firstNumber; //9
 
-    // echo $firstNumber+=3;
-
-    // echo $result;
-    //-----------------------------------
-    $text1="ali";
-    $text2="farjamy";
-    // echo $text1." ".$text2;        // we concat this
-
-    $text1.=$text2;
-    echo $text1;
-
-    //-----------------------------------
+    $x=20;
+    $y=25;
+    $z="20";
+    // var_dump($x==$z);//bool(true) 
+    // var_dump($x===$z);//bool(false)   it consider the data-type
+    // var_dump($x!=$y);//bool(true) 
+    var_dump($x>$y);//bool(false) 
+    var_dump($x<$y);//bool(true) 
+    var_dump($x>=$y);//bool(false) 
 
 
 
