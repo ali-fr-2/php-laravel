@@ -10,15 +10,32 @@
 
     <?php
 
-    // $myName = "ali";
-    // var_dump($myName); 
-    //string(3) "ali"   this function show us the data-type
-    $showFullNmae = array("ali", "farjamy", 22);
-    // echo $showFullNmae; 
-    //Warning: Array to string conversion in C:\xampp\htdocs\codeyad\First.php on line 16
-    //it says you cant show array with echo function 
-    //you should use var-dump function 
-    var_dump($showFullNmae);
+    // $firstNumber=9;
+    // $secondNumber=3;
+    // $result=$firstNumber+$secondNumber;
+    // $result=$firstNumber-$secondNumber;
+    // $result=$firstNumber*$secondNumber;
+    // $result=$firstNumber/$secondNumber;
+    // $result=$firstNumber**$secondNumber;
+    // $result=$firstNumber%$secondNumber;
+
+    // echo $firstNumber+=3;
+
+    // echo $result;
+    //-----------------------------------
+    $text1="ali";
+    $text2="farjamy";
+    // echo $text1." ".$text2;        // we concat this
+
+    $text1.=$text2;
+    echo $text1;
+
+    //-----------------------------------
+
+
+
+
+
 
     ?>
 
