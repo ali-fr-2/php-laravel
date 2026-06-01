@@ -7,30 +7,39 @@
 </head>
 
 <body>
-
+    <pre>
     <?php
 
-    // $firstNumber=10;
-    // echo++$firstNumber; //11
-    // echo--$firstNumber; //9
+    // $showFullName = array("ali", "farjamy", 20);
+    // var_dump($showFullName);
+    //array(3) { [0]=> string(3) "ali" [1]=> string(7) "farjamy" [2]=> int(20) } 
 
-    $x=20;
-    $y=25;
-    $z="20";
-    // var_dump($x==$z);//bool(true) 
-    // var_dump($x===$z);//bool(false)   it consider the data-type
-    // var_dump($x!=$y);//bool(true) 
-    var_dump($x>$y);//bool(false) 
-    var_dump($x<$y);//bool(true) 
-    var_dump($x>=$y);//bool(false) 
+    // print_r($showFullName);
+    //Array ( [0] => ali [1] => farjamy [2] => 20 ) 
+    // print_r($showFullName[2]); //20 
+    //print_r method did not return data-type
+    // the  echo method is faster than two others
 
+    $color = "red blue green black";
+    // $function = explode(" ", $color,); // it respectively present : seperate , string , limit
+    // print_r($function); //    Array
+    // (
+    //     [0] => red
+    //     [1] => blue
+    //     [2] => green
+    //     [3] => black
+    // )
 
-
-
+    $function = explode(" ", $color, 2);
+    print_r($function); //    Array
+    // (
+    //     [0] => red
+    //     [1] => blue green black
+    // )
 
 
     ?>
-
+    </pre>
 </body>
 
 </html>
