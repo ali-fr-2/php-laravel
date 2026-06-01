@@ -10,9 +10,18 @@
 
     <?php
 
-    echo "hi ";
-    echo "<br>";
-    echo "world"
+    // $myname = "ali";
+    // echo $myname;
+    // echo $myname;
+    // echo $myname;
+    // echo $myname;
+    // echo $myname;
+
+    // $myNumber = 5;
+    // $myNumber = 500;
+    // echo $myNumber;       //it shows the second one beacuse we appointment it later
+    $myNumber = 500;
+    echo $myNumber+100;
 
     ?>
 
