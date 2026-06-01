@@ -10,18 +10,15 @@
 
     <?php
 
-    // $myname = "ali";
-    // echo $myname;
-    // echo $myname;
-    // echo $myname;
-    // echo $myname;
-    // echo $myname;
-
-    // $myNumber = 5;
-    // $myNumber = 500;
-    // echo $myNumber;       //it shows the second one beacuse we appointment it later
-    $myNumber = 500;
-    echo $myNumber+100;
+    // $myName = "ali";
+    // var_dump($myName); 
+    //string(3) "ali"   this function show us the data-type
+    $showFullNmae = array("ali", "farjamy", 22);
+    // echo $showFullNmae; 
+    //Warning: Array to string conversion in C:\xampp\htdocs\codeyad\First.php on line 16
+    //it says you cant show array with echo function 
+    //you should use var-dump function 
+    var_dump($showFullNmae);
 
     ?>
 
