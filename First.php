@@ -7,39 +7,34 @@
 </head>
 
 <body>
-    <pre>
+
     <?php
 
-    // $showFullName = array("ali", "farjamy", 20);
-    // var_dump($showFullName);
-    //array(3) { [0]=> string(3) "ali" [1]=> string(7) "farjamy" [2]=> int(20) } 
+    // $train="alifarjamy@gmail.com";
+    // $function=explode("@",$train,2);
 
-    // print_r($showFullName);
-    //Array ( [0] => ali [1] => farjamy [2] => 20 ) 
-    // print_r($showFullName[2]); //20 
-    //print_r method did not return data-type
-    // the  echo method is faster than two others
+    // // print_r($function);
+    // $userName=$function[0];
+    // echo $userName;
 
-    $color = "red blue green black";
-    // $function = explode(" ", $color,); // it respectively present : seperate , string , limit
-    // print_r($function); //    Array
-    // (
-    //     [0] => red
-    //     [1] => blue
-    //     [2] => green
-    //     [3] => black
-    // )
 
-    $function = explode(" ", $color, 2);
-    print_r($function); //    Array
-    // (
-    //     [0] => red
-    //     [1] => blue green black
-    // )
+    // $color=array("red","green","blue");
+    // $toString=implode(" ",$color);//its opposite of explode 
+    // echo $toString; //we use explode in case of change string to array and we use implode when we want to change array to string
 
+    // $name="           ali farjamy             ";
+    // var_dump($name);//string(35) " ali farjamy "
+
+    // $reform=trim($name);
+    // var_dump($reform);//string(11) "ali farjamy" 
+
+
+    $name="alifarjamy";
+    $reform=trim($name,"ali");//string(7) "farjamy" 
+    var_dump($reform);
 
     ?>
-    </pre>
+
 </body>
 
 </html>
