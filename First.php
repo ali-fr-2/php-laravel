@@ -10,28 +10,19 @@
 
     <?php
 
-    // $train="alifarjamy@gmail.com";
-    // $function=explode("@",$train,2);
-
-    // // print_r($function);
-    // $userName=$function[0];
-    // echo $userName;
-
-
-    // $color=array("red","green","blue");
-    // $toString=implode(" ",$color);//its opposite of explode 
-    // echo $toString; //we use explode in case of change string to array and we use implode when we want to change array to string
-
-    // $name="           ali farjamy             ";
-    // var_dump($name);//string(35) " ali farjamy "
-
-    // $reform=trim($name);
-    // var_dump($reform);//string(11) "ali farjamy" 
+    $name = "hi world";
+    //    echo strlen($name);
+    //    echo strpos($name,"orld");
+    //    echo str_replace("world","ali",$name);
+    // var_dump(str_split($name,"3"));
+    // echo strcmp($name,"hi");//it shows that if hi is in this variable or not and if yes show the position of it and if not return -1
+    // echo substr($name,3);
+    echo strtoupper($name);
+    echo strtolower($name);
 
 
-    $name="alifarjamy";
-    $reform=trim($name,"ali");//string(7) "farjamy" 
-    var_dump($reform);
+
+
 
     ?>
 
