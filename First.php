@@ -10,14 +10,14 @@
 
     <?php
 
-    // $showFullName=array("ali","farjamy",22);
-    // print_r($showFullName);
-    // echo $showFullName[2];
+    $age=array("ali"=>22,"adel"=>21,"taha"=>20);
+    echo "ali is ".$age['ali']." years old";
 
-    $color=array();
-    echo $color[100]="green";
-    var_dump($color);
+    $first=["red","green"];
+    $second=["sky","car"];
 
+    $setArray=array_combine($first,$second);
+    print_r($setArray);
 
 
 
