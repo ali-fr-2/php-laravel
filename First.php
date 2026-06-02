@@ -10,17 +10,19 @@
 
     <?php
 
-    $age=array("ali"=>22,"adel"=>21,"taha"=>20);
-    echo "ali is ".$age['ali']." years old";
+    // $cars=array(
+    //     array("benz","cyan"),
+    //     array("porche","green"),
+    //     array("volvo","black"),
+    // );
+    // var_dump($cars[0][1]);
 
-    $first=["red","green"];
-    $second=["sky","car"];
-
-    $setArray=array_combine($first,$second);
-    print_r($setArray);
-
-
-
+    $myFamily=array(
+        array("name"=>'ali','phone'=>914,'age'=>22),
+        array("name"=>'reza','phone'=>914,'age'=>21),
+        array("name"=>'ahmad','phone'=>914,'age'=>23),
+    );
+    var_dump($myFamily[2]["name"]);
     ?>
 
 </body>
