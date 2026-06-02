@@ -10,16 +10,13 @@
 
     <?php
 
-    $name = "hi world";
-    //    echo strlen($name);
-    //    echo strpos($name,"orld");
-    //    echo str_replace("world","ali",$name);
-    // var_dump(str_split($name,"3"));
-    // echo strcmp($name,"hi");//it shows that if hi is in this variable or not and if yes show the position of it and if not return -1
-    // echo substr($name,3);
-    echo strtoupper($name);
-    echo strtolower($name);
+    // $showFullName=array("ali","farjamy",22);
+    // print_r($showFullName);
+    // echo $showFullName[2];
 
+    $color=array();
+    echo $color[100]="green";
+    var_dump($color);
 
 
 
