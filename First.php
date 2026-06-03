@@ -10,23 +10,29 @@
 
     <?php
 
-    // $name=array("ali","reza","ahmad","sara");
-    // array_pop($name);
-    // var_dump($name);
+    // $cars=array("tesla","benz");
+    // array_unshift($cars,"bmw");
+    // var_dump($cars);
 
-    // array_push($name,"mmd","arash");
-    // var_dump($name);
+    // $cars = array("tesla", "benz");
+    // array_shift($cars);
+    // var_dump($cars);
 
-    // $color1 = array("red", "blue");
-    // $color2 = array("green", "black");
-    // var_dump(array_replace($color1, $color2));
+    // $fruits=array("a"=>"mango","b"=>"apple","c"=>"banana");
+    // sort($fruits);
+    // var_dump($fruits);
 
-    // $cars=array("benz","bmw","lexus");
-    // var_dump(array_reverse($cars));
+    // $fruits1 = array("a" => "mango", "b" => "apple", "c" => "lemon");
+    // $fruits2 = array("a" => "mango", "b" => "apple", "d" => "banana");
+    // var_dump(array_diff($fruits1, $fruits2));
 
-    $cars=array("benz","bmw","lexus","tesla");
-    var_dump(array_slice($cars,1,1));
-    var_dump(array_slice($cars,1));
+    // $fruits1 = array("a" => "mango", "b" => "apple", "c" => "lemon");
+    // $fruits2 = array("a" => "mango", "b" => "apple", "d" => "banana");
+    // var_dump(array_diff_key($fruits1, $fruits2));
+
+    $fruits1 = array("a" => "mango", "b" => "apple", "c" => "lemon");
+    $fruits2 = array("d" => "strawberry", "e" => "orange", "f" => "banana");
+    var_dump(array_merge($fruits1,$fruits2));
 
 
     ?>
