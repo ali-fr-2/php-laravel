@@ -10,29 +10,13 @@
 
     <?php
 
-    // $cars=array("tesla","benz");
-    // array_unshift($cars,"bmw");
-    // var_dump($cars);
+    $age=18;
 
-    // $cars = array("tesla", "benz");
-    // array_shift($cars);
-    // var_dump($cars);
-
-    // $fruits=array("a"=>"mango","b"=>"apple","c"=>"banana");
-    // sort($fruits);
-    // var_dump($fruits);
-
-    // $fruits1 = array("a" => "mango", "b" => "apple", "c" => "lemon");
-    // $fruits2 = array("a" => "mango", "b" => "apple", "d" => "banana");
-    // var_dump(array_diff($fruits1, $fruits2));
-
-    // $fruits1 = array("a" => "mango", "b" => "apple", "c" => "lemon");
-    // $fruits2 = array("a" => "mango", "b" => "apple", "d" => "banana");
-    // var_dump(array_diff_key($fruits1, $fruits2));
-
-    $fruits1 = array("a" => "mango", "b" => "apple", "c" => "lemon");
-    $fruits2 = array("d" => "strawberry", "e" => "orange", "f" => "banana");
-    var_dump(array_merge($fruits1,$fruits2));
+    if ($age>=18) {
+        echo "you should go";
+    }else{
+        echo "you shouldnt go";
+    };
 
 
     ?>
