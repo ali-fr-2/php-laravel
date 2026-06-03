@@ -10,45 +10,17 @@
 
     <?php
 
-    // $number=21;
+    $num1=6;
+    $num2=8;
 
-    // echo ($number%2==0?"even":"odd"); 
-
-    // if ($number%2==0) {
-    //     echo "even";
-    // }
-    // else{
-    //     echo "odd";
-    // };
-
-    // $age=16;
-    // $gender="female";
-
-    // if ($gender=="male") {
-    //     if ($age>=18) {
-    //         echo "you should go";
-    //     }
-    //     else{
-    //         echo "you have time";
-    //     };
-
-    // }
-    // else{
-    //     echo "you are a female";
-    // };
+    if ($num1+$num2==14||$num1*$num2==40) {
+        echo "true";
+    }
+    else{
+        echo "false";
+    }
 
 
-        $number=5;
-
-        if ($number>5) {
-            echo "its more than 5";
-        }
-        elseif ($number<5){
-            echo "its less than 5";
-        }
-        else{
-            echo "its equal";
-        }
     ?>
 
 </body>
