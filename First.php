@@ -10,46 +10,51 @@
 
     <?php
 
-    // $city="";
-    // $price=100;
-    // $person=10;
+    // $x = 5;
+    // $y = 6;
+    // $z = 7;
 
-    // if ($city=="yasuj"||"esfahan") {
-    //     if ($person==1) {
-    //         $price=$person*$price;
-    //         $totalPrice=0.99*$price;
-    //         echo $totalPrice;
-    //     }
-    //     if ($person==2) {
-    //         $price=$person*$price;
-    //         $totalPrice=0.98*$price;
-    //         echo $totalPrice;
-    //     }
-    //     if ($person==3) {
-    //         $price=$person*$price;
-    //         $totalPrice=0.97*$price;
-    //         echo $totalPrice;
-    //     }
-    //     if ($person==4) {
-    //         $price=$person*$price;
-    //         $totalPrice=0.96*$price;
-    //         echo $totalPrice;
-    //     }
-    //     if ($person>=5) {
-    //         $price=$person*$price;
-    //         $totalPrice=0.95*$price;
-    //         echo $totalPrice;
-    //     }
+    // if ($x < $y + $z && $y < $x + $z && $z < $x + $y) {
+    //     echo "true";
+    // }
+    // else{
+    //     echo "false";
     // }
 
-    $x = 5;
-    $y = 10;
+    $x=15;
+    $y=17;
 
-    if ($x + $y == 16 && $x * $y == 50) {
-        echo "true";
-    }
-    else{
-        echo "false";
+    // switch ($x+$y) {
+    //     case 30:
+    //        echo "30";
+    //         break;
+        
+    //     case 31:
+    //        echo "31";
+    //         break;
+        
+    //     case 32:
+    //        echo "32";
+    //         break;
+        
+    //     default:
+    //         echo "false";
+    //         break;
+    // }
+
+    switch ($x+$y) {
+        case 30://it means or in switch case ||
+        case 31:
+           echo "true";
+            break;
+        
+        case 32:
+           echo "32";
+            break;
+        
+        default:
+            echo "false";
+            break;
     }
 
     ?>
