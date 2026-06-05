@@ -10,51 +10,24 @@
 
     <?php
 
-    // $x = 5;
-    // $y = 6;
-    // $z = 7;
+    // $myName = "amir";
 
-    // if ($x < $y + $z && $y < $x + $z && $z < $x + $y) {
-    //     echo "true";
-    // }
-    // else{
-    //     echo "false";
-    // }
+    // switch ($myName) {
+    //     case 'ali':
+    //         echo "ali is here";
+    //         break;
 
-    $x=15;
-    $y=17;
+    //     case "reza":
+    //         echo "reza is here";
+    //         break;
 
-    // switch ($x+$y) {
-    //     case 30:
-    //        echo "30";
-    //         break;
-        
-    //     case 31:
-    //        echo "31";
-    //         break;
-        
-    //     case 32:
-    //        echo "32";
-    //         break;
-        
     //     default:
-    //         echo "false";
+    //         echo "the person is not here";
     //         break;
     // }
 
-    switch ($x+$y) {
-        case 30://it means or in switch case ||
-        case 31:
-           echo "true";
-            break;
-        
-        case 32:
-           echo "32";
-            break;
-        
-        default:
-            echo "false";
-            break;
+    for ($i = 0; $i < 5; $i++) {
+        echo $i . "<br>";
     }
 
     ?>
