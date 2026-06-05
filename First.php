@@ -10,31 +10,30 @@
 
     <?php
 
-    // for ($i=0; $i <=20 ; $i++) { 
-    //     if ($i%2==0) {
-    //         echo $i."even"."<br>";
-    //     }
-    //     else{
-    //         echo $i."odd"."<br>";
-    //     }
-    // }
+    // $x=0;
+    // $y=0;
 
-    // $i=0;
-
-    // while ($i <= 10) {
-    //     echo $i;
+    // while ($x < 5) {
+    //     while ($y <5-$x) {
+    //         echo "*";
+    //         $y++;
+    //     }
+    //     $y=0;
     //     echo "<br>";
-    //     $i++;
+    //     $x++;
     // }
 
-    $number=5;
-    $mult=1;
+    // $x=1;
+    // while ($x <= 5) {
+    //     $y=1;
+    //     while($y<=$x){
+    //         echo "*";
+    //         $y++;
+    //     }
+    //     echo "<br>";
+    //     $x++;
+    // }
 
-    while ($mult <= 10) {
-        echo $mult*$number;
-        echo "<br>";
-        $mult++;
-    }
 
     ?>
 
