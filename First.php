@@ -10,24 +10,30 @@
 
     <?php
 
-    // $myName = "amir";
-
-    // switch ($myName) {
-    //     case 'ali':
-    //         echo "ali is here";
-    //         break;
-
-    //     case "reza":
-    //         echo "reza is here";
-    //         break;
-
-    //     default:
-    //         echo "the person is not here";
-    //         break;
+    // for ($i=0; $i <=20 ; $i++) { 
+    //     if ($i%2==0) {
+    //         echo $i."even"."<br>";
+    //     }
+    //     else{
+    //         echo $i."odd"."<br>";
+    //     }
     // }
 
-    for ($i = 0; $i < 5; $i++) {
-        echo $i . "<br>";
+    // $i=0;
+
+    // while ($i <= 10) {
+    //     echo $i;
+    //     echo "<br>";
+    //     $i++;
+    // }
+
+    $number=5;
+    $mult=1;
+
+    while ($mult <= 10) {
+        echo $mult*$number;
+        echo "<br>";
+        $mult++;
     }
 
     ?>
