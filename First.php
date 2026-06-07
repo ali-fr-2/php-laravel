@@ -8,35 +8,63 @@
 
 <body>
 
+<!-- <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    table{
+        text-align: center;
+        border-collapse: collapse;
+    }
+    table th{
+        background-color: blue;
+        padding: 5px;
+        color: white;
+    }
+    tr:nth-child(even){
+        background-color: #ccc;
+    }
+</style> -->
+
+
     <?php
 
+    $name = array("ali", "ahmad", "karen", "hooman", "koroosh", "adel", "farhan", "fardad", "faraz");
+    // $family = array("farjamy", "rooz", "rezaie", "ahmady", "goodarzy", "ehsanpoor", "eghtesady", "emady", "saatchi");
 
-    // $i=1;
-    // do{
-    //     echo $i."<br>";
-    //     $i++;
-    //     echo $i;
-    // }while($i<0);
 
-    $i=0;
-    $even="";
-    $odd="";
-    
-    do{
-        if ($i%2==0) {
-            $even=$even."".$i;
-        }
-        else{
-            $odd=$odd."".$i;
-        }
-        $i++;
-    }while($i<30);
 
-    echo "even is =".$even."<br>";
-    echo "odd is =".$odd."<br>";
+    // echo "<table border='1' width=300>";
+    // echo "<tr>
+    // <th>masters</th>
+    // <th>name</th>
+    // <th>family</th>    
+    // </tr>";
 
+    // for ($i = 0; $i < 9; $i++) {
+    //     echo ("<tr>
+    //     <td>
+    //     " . (1 + $i) . "
+    //     </td>
+    //     <td>
+    //     " . $name[$i] . "
+    //     </td>
+    //     <td>
+    //     " . $family[$i] . "
+    //     </td>
+    //     </tr>");
+    // }
+
+    foreach($name as $value){
+        echo "$value <br>";
+    }
 
     ?>
+
+
 
 </body>
 
