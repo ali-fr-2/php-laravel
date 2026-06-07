@@ -10,16 +10,17 @@
 
     <?php
 
-    // echo time();
-    // echo date("y/m/d");
-    // echo date("l");
-    // echo date('h:i:s');
-    // date_default_timezone_set('iran');
-    // echo date('h:i:s');
+    // setcookie('name','ali',time()+5);
 
-    require_once 'jdf.php';
-    echo jdate("y/m/d");
+    // echo $_COOKIE['name'];
 
+    // setcookie('name', 'ali', time() + 60*60);
+
+    // echo $_COOKIE['name'];
+
+    setcookie('name', 'ali', time() -100);//for deleting the cookies
+
+    echo $_COOKIE['name'];
 
 
     ?>
