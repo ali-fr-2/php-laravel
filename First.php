@@ -11,38 +11,51 @@
 
     <?php
 
-    // function myFun(){
+    // function hello($name="ali"){
+    //     echo "hi  ".$name."<br>";
+    // }
+
+    // hello("ahmad");
+    // hello("reza");
+    // hello();
+    // hello("adel");
+    // hello();
+
+    // function addFive(&$num){
+    //     $num+=5; 
+    // }
+
+    // $num2=20;
+    // addFive($num2);
+    // echo $num2;
+
+
+    // function add($num1,$num2){
+    //     $result=$num1+$num2;
+    //     return $result;
+    // }
+
+    // $show=add(20,30);
+    // echo $show;
+
+    // function hello(){
     //     echo "hello world";
     // }
 
-    // myFun();
-
-    // function myFun()
-    // {
-    //     $num1=5;
-    //     echo $num1+10;
-    // }
-
-    // myFun();
-
-    // function myFun($num1, $num2)//it calls parameters
-    // {
-    //     $result = $num1 * $num2;
-    //     echo $result;
-    // }
-
-    // myFun(5, 10);//it calls arguamant
+    // $fun2="hello";
 
 
-    // function myFun($num1, $num2)
-    // {
-    //     return  $num1 * $num2;
-    // }
+    // $fun2();
 
-    // echo (myFun(9, 10));
-    //--------------------------------------------------------------------------------------
-    // if we declare a parameter but we dont declare arguamant it cuase a fatal error
-    //but if we decale an arguamant but we dont declare parameters it didnt cuase an error
+    function hello($name)
+    {
+        echo "hello world" . $name;
+    }
+
+    $fun2 = "hello";
+
+
+    $fun2("aaa");
 
 
     ?>
