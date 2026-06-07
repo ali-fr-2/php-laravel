@@ -10,29 +10,30 @@
 
     <?php
 
-    // $x=0;
-    // $y=0;
 
-    // while ($x < 5) {
-    //     while ($y <5-$x) {
-    //         echo "*";
-    //         $y++;
-    //     }
-    //     $y=0;
-    //     echo "<br>";
-    //     $x++;
-    // }
+    // $i=1;
+    // do{
+    //     echo $i."<br>";
+    //     $i++;
+    //     echo $i;
+    // }while($i<0);
 
-    // $x=1;
-    // while ($x <= 5) {
-    //     $y=1;
-    //     while($y<=$x){
-    //         echo "*";
-    //         $y++;
-    //     }
-    //     echo "<br>";
-    //     $x++;
-    // }
+    $i=0;
+    $even="";
+    $odd="";
+    
+    do{
+        if ($i%2==0) {
+            $even=$even."".$i;
+        }
+        else{
+            $odd=$odd."".$i;
+        }
+        $i++;
+    }while($i<30);
+
+    echo "even is =".$even."<br>";
+    echo "odd is =".$odd."<br>";
 
 
     ?>
