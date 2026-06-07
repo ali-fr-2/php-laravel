@@ -8,13 +8,28 @@
 <body>
     
 <?php
-    echo "hi ali ";
-    // include "First.php";
-    // include "First1.php";
-    require "First.php";
-    // require "First1.php";
-    // echo "<br>";
-    echo "abcd";
+
+session_start();
+
+// session_destroy();//if wwe delete the varaible the varaible will vanished
+
+// $_SESSION['name']="alifarajamy";
+// // session_unset();
+// echo $_SESSION['name'];
+
+
+if(isset($_SESSION['counter'])){
+    $_SESSION['counter']+=1;
+}
+else{
+    $_SESSION['counter']=1;
+}
+
+$msg='visited  '.$_SESSION['counter'];
+echo $msg;
+
+//------------------------------------
+//each browser saved its own session
 
 ?>
 
