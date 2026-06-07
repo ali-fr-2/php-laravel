@@ -8,59 +8,42 @@
 
 <body>
 
-<!-- <style>
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    table{
-        text-align: center;
-        border-collapse: collapse;
-    }
-    table th{
-        background-color: blue;
-        padding: 5px;
-        color: white;
-    }
-    tr:nth-child(even){
-        background-color: #ccc;
-    }
-</style> -->
-
 
     <?php
 
-    $name = array("ali", "ahmad", "karen", "hooman", "koroosh", "adel", "farhan", "fardad", "faraz");
-    // $family = array("farjamy", "rooz", "rezaie", "ahmady", "goodarzy", "ehsanpoor", "eghtesady", "emady", "saatchi");
-
-
-
-    // echo "<table border='1' width=300>";
-    // echo "<tr>
-    // <th>masters</th>
-    // <th>name</th>
-    // <th>family</th>    
-    // </tr>";
-
-    // for ($i = 0; $i < 9; $i++) {
-    //     echo ("<tr>
-    //     <td>
-    //     " . (1 + $i) . "
-    //     </td>
-    //     <td>
-    //     " . $name[$i] . "
-    //     </td>
-    //     <td>
-    //     " . $family[$i] . "
-    //     </td>
-    //     </tr>");
+    // function myFun(){
+    //     echo "hello world";
     // }
 
-    foreach($name as $value){
-        echo "$value <br>";
-    }
+    // myFun();
+
+    // function myFun()
+    // {
+    //     $num1=5;
+    //     echo $num1+10;
+    // }
+
+    // myFun();
+
+    // function myFun($num1, $num2)//it calls parameters
+    // {
+    //     $result = $num1 * $num2;
+    //     echo $result;
+    // }
+
+    // myFun(5, 10);//it calls arguamant
+
+
+    // function myFun($num1, $num2)
+    // {
+    //     return  $num1 * $num2;
+    // }
+
+    // echo (myFun(9, 10));
+    //--------------------------------------------------------------------------------------
+    // if we declare a parameter but we dont declare arguamant it cuase a fatal error
+    //but if we decale an arguamant but we dont declare parameters it didnt cuase an error
+
 
     ?>
 
