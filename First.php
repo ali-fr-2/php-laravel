@@ -11,52 +11,16 @@
 
     <?php
 
-    // function hello($name="ali"){
-    //     echo "hi  ".$name."<br>";
+    // function factorial($x)
+    // {
+    //     if ($x == 0 || $x == 1) {
+    //         return 1;
+    //     }
+
+    //     return $x * factorial($x - 1);
     // }
 
-    // hello("ahmad");
-    // hello("reza");
-    // hello();
-    // hello("adel");
-    // hello();
-
-    // function addFive(&$num){
-    //     $num+=5; 
-    // }
-
-    // $num2=20;
-    // addFive($num2);
-    // echo $num2;
-
-
-    // function add($num1,$num2){
-    //     $result=$num1+$num2;
-    //     return $result;
-    // }
-
-    // $show=add(20,30);
-    // echo $show;
-
-    // function hello(){
-    //     echo "hello world";
-    // }
-
-    // $fun2="hello";
-
-
-    // $fun2();
-
-    function hello($name)
-    {
-        echo "hello world" . $name;
-    }
-
-    $fun2 = "hello";
-
-
-    $fun2("aaa");
-
+    // echo factorial(6);
 
     ?>
 
