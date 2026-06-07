@@ -10,8 +10,16 @@
 
     <?php
 
-    session_start();
-    echo $_SESSION['name'];
+    // echo time();
+    // echo date("y/m/d");
+    // echo date("l");
+    // echo date('h:i:s');
+    // date_default_timezone_set('iran');
+    // echo date('h:i:s');
+
+    require_once 'jdf.php';
+    echo jdate("y/m/d");
+
 
 
     ?>
