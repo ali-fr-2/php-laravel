@@ -19,7 +19,7 @@
 // echo "ali";
 //-------------------------------------
 
-echo "welcome ".$_POST['myName'];
+// echo "welcome ".$_POST['myName'];
 
 
 
