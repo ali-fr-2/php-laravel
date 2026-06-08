@@ -6,32 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+
 <?php
-
-session_start();
-
-// session_destroy();//if wwe delete the varaible the varaible will vanished
-
-// $_SESSION['name']="alifarajamy";
-// // session_unset();
-// echo $_SESSION['name'];
-
-
-if(isset($_SESSION['counter'])){
-    $_SESSION['counter']+=1;
-}
-else{
-    $_SESSION['counter']=1;
-}
-
-$msg='visited  '.$_SESSION['counter'];
-echo $msg;
-
-//------------------------------------
-//each browser saved its own session
-
+var_dump($_GET);
 ?>
+
+<form action="./First.php" method="get">
+    <input type="text" name="name" >
+    <input type="text" name="family" >
+    <button type="submit">submit</button>
+</form>
 
 
 </body>

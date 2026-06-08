@@ -1,32 +1,18 @@
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+// echo '<pre>';
+// var_dump($_GET);
+// echo '</pre>';
 
-<body>
+// echo '<hr>';
 
-    <?php
+// echo $_GET['name'] ?? 'name not found';
+//----------------------------------------------
+// echo $_GET['name'];
 
-    // setcookie('name','ali',time()+5);
-
-    // echo $_COOKIE['name'];
-
-    // setcookie('name', 'ali', time() + 60*60);
-
-    // echo $_COOKIE['name'];
-
-    setcookie('name', 'ali', time() -100);//for deleting the cookies
-
-    echo $_COOKIE['name'];
-
-
-    ?>
-
-
-
-</body>
-
-</html>
+if($_GET['name']=="ali"&&$_GET['family']=="farjamy"){
+    echo "welcome ".$_GET['name']." ".$_GET['family'];
+}
+else{
+    echo "fuck off";
+}
