@@ -1,26 +1,45 @@
 <?php
 
 
-// if(!empty($_GET['myName'])){
-//     echo "welcome ".$_GET['myName'];
+// var_dump($_FILES['image']);
+
+// var_dump($_FILES['image']['name']);
+
+// if($_FILES['image']['size']<100000){
+//     echo "succesfully";
 // }
 // else{
-//     echo "enter your name";
+//     echo "error";
 // }
 
+// $fileName=basename($_FILES['image']['name']);
+// $fileTemp=$_FILES['image']['tmp_name'];
 
-// if($_GET['myName']=="ali"){
-//     echo "welcome ".$_GET['myName'];
+// move_uploaded_file($fileTemp,"images/".$fileName);
+
+
+
+// echo "<pre>";
+// var_dump($_FILES['image']);
+// echo "</pre>";
+
+
+//------------------------------------------important
+// if(move_uploaded_file(
+//     $_FILES['image']['tmp_name'],
+//     "D:/practice-php/".$_FILES['image']['name']
+// )){
+//     echo "succes";
 // }
 // else{
-//     header("location:newfile.php");
+//     echo "failed";
 // }
 
-// echo "ali";
-//-------------------------------------
-
-// echo "welcome ".$_POST['myName'];
 
 
+
+$basepath=__DIR__;
+
+var_dump($basepath);
 
 ?>
