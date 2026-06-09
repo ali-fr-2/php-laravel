@@ -25,21 +25,21 @@
 
 
 //------------------------------------------important
-// if(move_uploaded_file(
-//     $_FILES['image']['tmp_name'],
-//     "D:/practice-php/".$_FILES['image']['name']
-// )){
-//     echo "succes";
-// }
-// else{
-//     echo "failed";
-// }
+if(move_uploaded_file(
+    $_FILES['image']['tmp_name'],
+    "D:/practice-php/".$_FILES['image']['name']
+)){
+    echo "succes";
+}
+else{
+    echo "failed";
+}
 
 
 
 
-$basepath=__DIR__;
+// $basepath=__DIR__;
 
-var_dump($basepath);
+// var_dump($basepath);
 
 ?>

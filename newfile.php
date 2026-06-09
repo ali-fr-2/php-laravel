@@ -10,10 +10,39 @@
 <body>
 
 
-<form action="First.php" method="post" enctype="multipart/form-data">
-    <input type="file" name="image">
-    <input type="submit" name="submit" value="uploadFile">
-</form>
+<?php 
+
+$hostName="localhost";
+$userName="root";
+$password="";
+
+$connection=mysqli_connect($hostName,$userName,$password);
+
+// if(!$connection){
+//     echo "fail";
+//     exit;
+// }
+// else{
+//     echo "ok";
+// }
+
+if(!$connection){
+    die("fail".mysqli_connect_error());
+}
+echo "ok   ";
+
+$sql="CREATE DATABASE `alitest`";
+
+if(mysqli_query($connection,$sql)){
+    echo "succes";
+}
+else{
+    echo "fail". mysqli_error($connection);
+}
+
+
+
+?>
 
 
 </body>
