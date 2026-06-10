@@ -9,7 +9,7 @@ $dbName = "myDatabase";
 try {
     $connection = new PDO("mysql:host=$hostName;dbname=$dbName", $userName, $password);
     $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "INSERT INTO `users`(id,fName) VALUES(3,'farhad')";
+    $sql = "UPDATE `users` SET fName = 'mmd' WHERE id=1 ";
     $connection->exec($sql);
     echo "ok2";
 } catch (Exception $e) {

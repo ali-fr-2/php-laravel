@@ -3,18 +3,18 @@
 $hostName = "localhost";
 $userName = "root";
 $password = "";
-$dbname = "ali";
+$dbName = "myDatabase";
 
-$connection = mysqli_connect($hostName, $userName, $password, $dbname);
 
-if (!$connection) {
-    die("fail" . mysqli_connect_error());
-}
-echo "ok   ";
-
-$table = "CREATE TABLE `users` (`id` int NOT NULL,`username`varchar(255),`email`varchar(255) ) ";
-if (mysqli_query($connection, $table)) {
-    echo "table crated";
-} else {
-    echo "not created" . mysqli_error($connection);
+try {
+    $connection = new PDO("mysql:host=$hostName;dbname=$dbName", $userName, $password);
+    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = "CREATE TABLE users(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    fName VARCHAR(255)
+    )";
+    $connection->exec($sql);
+    echo "ok2";
+} catch (Exception $e) {
+    echo "error" . $e->getMessage();
 }

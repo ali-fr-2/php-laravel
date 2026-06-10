@@ -25,7 +25,7 @@ $password="";
 try {
     $connection=new PDO("mysql:host=$hostName",$userName,$password);
     $connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    $sql="CREATE DATABASE AMIR1";
+    $sql="CREATE DATABASE myDatabase";
     $connection->exec($sql);
     echo "ok2";
 } catch (Exception $e) {
