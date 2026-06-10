@@ -1,45 +1,33 @@
 <?php
 
-
-// var_dump($_FILES['image']);
-
-// var_dump($_FILES['image']['name']);
-
-// if($_FILES['image']['size']<100000){
-//     echo "succesfully";
+// function divide($x, $y)
+// {
+//     try {
+//         if ($y != 0) {
+//             echo $x / $y;
+//         } else {
+//             throw new Exception("DO NOT PUT ZERO!");
+//         }
+//     } catch (\Throwable $th) {
+//         echo $th->getMessage();
+//     }
 // }
-// else{
-//     echo "error";
-// }
 
-// $fileName=basename($_FILES['image']['name']);
-// $fileTemp=$_FILES['image']['tmp_name'];
-
-// move_uploaded_file($fileTemp,"images/".$fileName);
+// divide(10,1);
+  
 
 
+$hostName="localhost";
+$userName="root";
+$password="";
 
-// echo "<pre>";
-// var_dump($_FILES['image']);
-// echo "</pre>";
 
-
-//------------------------------------------important
-if(move_uploaded_file(
-    $_FILES['image']['tmp_name'],
-    "D:/practice-php/".$_FILES['image']['name']
-)){
-    echo "succes";
+try {
+    $connection=new PDO("mysql:host=$hostName",$userName,$password);
+    $connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    $sql="CREATE DATABASE AMIR1";
+    $connection->exec($sql);
+    echo "ok2";
+} catch (Exception $e) {
+    echo "error".$e->getMessage();
 }
-else{
-    echo "failed";
-}
-
-
-
-
-// $basepath=__DIR__;
-
-// var_dump($basepath);
-
-?>
