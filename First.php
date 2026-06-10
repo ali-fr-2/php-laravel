@@ -20,14 +20,22 @@
 $hostName="localhost";
 $userName="root";
 $password="";
+$dbName="myfirst";
 
 
 try {
-    $connection=new PDO("mysql:host=$hostName",$userName,$password);
+    $connection=new PDO("mysql:host=$hostName;dbname=$dbName",$userName,$password);
     $connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    $sql="CREATE DATABASE myDatabase";
-    $connection->exec($sql);
-    echo "ok2";
+    $sql="SELECT * FROM `users`";
+    $statement=$connection->query($sql);
+    $users=$statement->fetchAll();
+    // var_dump($users[3]['username']);
+    // var_dump($users[3]['email']);
+
+    foreach ($users as $value) {
+        echo $value['id']." ".$value['username']."<br>";
+    }
+
 } catch (Exception $e) {
     echo "error".$e->getMessage();
 }
