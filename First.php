@@ -1,41 +1,41 @@
 <?php
 
-// function divide($x, $y)
-// {
-//     try {
-//         if ($y != 0) {
-//             echo $x / $y;
-//         } else {
-//             throw new Exception("DO NOT PUT ZERO!");
-//         }
-//     } catch (\Throwable $th) {
-//         echo $th->getMessage();
-//     }
-// }
-
-// divide(10,1);
-  
+include "databse.php";
 
 
-$hostName="localhost";
-$userName="root";
-$password="";
-$dbName="myfirst";
+$sql = "SELECT * FROM blog ORDER BY sort  ";
+$statement = $connection->query($sql);
+$menus = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 
-try {
-    $connection=new PDO("mysql:host=$hostName;dbname=$dbName",$userName,$password);
-    $connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    $sql="SELECT * FROM `users`";
-    $statement=$connection->query($sql);
-    $users=$statement->fetchAll();
-    // var_dump($users[3]['username']);
-    // var_dump($users[3]['email']);
+?>
+<!DOCTYPE html>
+<html lang="fa">
 
-    foreach ($users as $value) {
-        echo $value['id']." ".$value['username']."<br>";
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
 
-} catch (Exception $e) {
-    echo "error".$e->getMessage();
-}
+<body>
+
+    <div class="container">
+
+        <?php 
+        foreach($menus as $value){
+            if($value["status"]==1){ ?>
+                <li>
+                    <a href="#"><?php echo $value['title']; ?></a>
+                </li>
+            <?php }} ?>
+       
+
+
+    </div>
+
+
+</body>
+
+</html>
